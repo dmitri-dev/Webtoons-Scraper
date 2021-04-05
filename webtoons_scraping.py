@@ -8,7 +8,7 @@ import pandas as pd
 
 
 options = Options()
-# options.add_argument("--headless")
+options.add_argument("--headless")
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 wait = WebDriverWait(driver, 10)
 url = "https://www.webtoons.com/en/challenge/tested/list?title_no=231173"
